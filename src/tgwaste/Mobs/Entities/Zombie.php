@@ -60,6 +60,21 @@ class Zombie extends MobsEntity {
             }
         }
 
+        //Enchant Drops
+        if (mt_rand(0, 199) < 5) {
+            switch (mt_rand(0, 2)) {
+                case 0:
+                    $drops[] = ItemFactory::getInstance()->get(ItemIds::IRON_INGOT, 0, 1 * $lootingL);
+                    break;
+                case 1:
+                    $drops[] = ItemFactory::getInstance()->get(ItemIds::CARROT, 0, 1 * $lootingL);
+                    break;
+                case 2:
+                    $drops[] = ItemFactory::getInstance()->get(ItemIds::POTATO, 0, 1 * $lootingL);
+                    break;
+            }
+        }
+
         return $drops;
     }
 

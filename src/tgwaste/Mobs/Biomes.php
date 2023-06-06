@@ -13,17 +13,16 @@ class Biomes {
 		$biometable = [
 			"BIRCH FOREST" => ["Cat", "Chicken", "Cow", "Horse", "Parrot", "Pig", "Rabbit", "Sheep", "Slime"],
 			"DESERT" => ["Cow", "Horse", "Pig", "Rabbit", "Sheep"],
-			//"END" => ["Enderman"],
-			"FOREST" => ["Bat", "Cat", "Chicken", "Cow", "Horse", "Parrot", "Pig", "Rabbit", "Sheep", "Bee"],
-			"HELL" => ["Bat", "Cat", "Chicken", "Cow", "Horse", "Parrot", "Pig", "Rabbit", "Sheep"],
+			"FOREST" => ["Cat", "Chicken", "Cow", "Horse", "Parrot", "Pig", "Rabbit", "Sheep", "Bee"],
+			"HELL" => ["Cat", "Chicken", "Cow", "Horse", "Parrot", "Pig", "Rabbit", "Sheep"],
 			"ICE PLAINS" => ["PolarBear", "Goat"],
-			"MOUNTAINS" => ["Bat", "Cat", "Chicken", "Cow", "Horse", "Llama", "Parrot", "Pig", "Rabbit", "Sheep", "Goat"],
+			"MOUNTAINS" => ["Cat", "Chicken", "Cow", "Horse", "Llama", "Parrot", "Pig", "Rabbit", "Sheep", "Goat"],
 			"OCEAN" => ["Cod", "Axolotl", "Dolphin", "ElderGuardian", "PufferFish", "Salmon", "Squid", "TropicalFish", "Drowned"],
 			"PLAINS" => ["Bee", "Cat", "Chicken", "Cow", "Donkey", "Horse", "Parrot", "Pig", "Rabbit", "Sheep", "Fox"],
 			"RIVER" => ["Cod", "Axolotl", "PufferFish", "Salmon", "TropicalFish", "Drowned"],
-			"SMALL MOUNTAIN" => ["Cat", "Chicken", "Cow", "Horse", "Llama", "Parrot", "Pig", "Rabbit", "Sheep", "Bee", "Fox", "Goat"],
-			"SWAMP" => ["Bat", "Cow", "Horse", "Pig", "Rabbit", "Sheep", "Slime"],
-			"TAIGA" => ["Bat", "Cat", "Chicken", "Cow", "Horse", "Ocelot", "Pig", "Rabbit", "Sheep", "Goat"]
+			"SMALL MOUNTAIN" => ["Cat", "Chicken", "Cow", "Horse", "Llama", "Parrot", "Pig", "Rabbit", "Sheep"],
+			"SWAMP" => ["Cow", "Horse", "Pig", "Rabbit", "Sheep", "Slime"],
+			"TAIGA" => ["Cat", "Chicken", "Cow", "Horse", "Ocelot", "Pig", "Rabbit", "Sheep"]
 		];
 
 		if (!array_key_exists($biome, $biometable)) {
@@ -36,18 +35,18 @@ class Biomes {
 	public function getNightMobsForBiome(string $biome) {
 		$biome = strtoupper($biome);
 		$biometable = [
-			"BIRCH FOREST" => ["Creeper", "Skeleton", "Spider", "Wolf", "Zombie", "Phantom", "Enderman", "ZombieVillager", "Witch", "Slime", "Witch", "Evoker", "Vindicator"],
-			"DESERT" => ["Creeper", "Husk", "Skeleton", "Spider", "Stray", "Wolf", "Zombie", "Phantom", "ZombieVillager", "Enderman", "Evoker", "Vindicator"],
+			"BIRCH FOREST" => ["Creeper", "Skeleton", "Spider", "Wolf", "Zombie", "Enderman", "ZombieVillager", "Witch", "Slime", "Witch"],
+			"DESERT" => ["Creeper", "Husk", "Skeleton", "Spider", "Stray", "Wolf", "Zombie", "ZombieVillager", "Enderman"],
 			"END" => ["Enderman"],
 			"FOREST" => ["Creeper", "Enderman", "Skeleton", "Spider", "Wolf", "Zombie", "ZombieVillager", "Witch"],
-			"HELL" => ["Skeleton", "Zombie", "Spider", "Creeper", "Enderman", "Vindicator"],
+			"HELL" => ["Skeleton", "Zombie", "Spider", "Creeper", "Enderman"],
 			"ICE PLAINS" => ["Skeleton", "Zombie", "Skeleton", "Enderman", "Spider", "Creeper"],
-			"MOUNTAINS" => ["Creeper", "Enderman", "Skeleton", "Spider", "Wolf", "Zombie", "Phantom", "Evoker", "Vindicator", "Witch"],
-			"OCEAN" => ["Cod", "Axolotl", "PufferFish", "Salmon", "TropicalFish", "Guardian", "ElderGuardian", "Drowned"],
-			"PLAINS" => ["Creeper", "Enderman", "Skeleton", "Spider", "Wolf", "Zombie", "ZombieVillager", "Phantom", "Evoker", "Vindicator", "Witch"],
+			"MOUNTAINS" => ["Creeper", "Enderman", "Skeleton", "Spider", "Wolf", "Zombie", "Witch"],
+			"OCEAN" => ["Cod", "PufferFish", "Salmon", "TropicalFish", "Drowned"],
+			"PLAINS" => ["Creeper", "Enderman", "Skeleton", "Spider", "Wolf", "Zombie", "ZombieVillager", "Witch"],
 			"SMALL MOUNTAIN" => ["Creeper", "Enderman", "Skeleton", "Spider", "Wolf", "Zombie", "ZombieVillager", "Phantom"],
-			"RIVER" => ["Cod", "Axolotl", "PufferFish", "Salmon", "TropicalFish", "Guardian", "ElderGuardian", "Drowned"],
-			"SMALL MOUNTAIN" => ["Creeper", "Skeleton", "Spider", "Wolf", "Zombie", "Evoker", "Vindicator", "Witch"],
+			"RIVER" => ["Cod", "Axolotl", "PufferFish", "Salmon", "TropicalFish", "Drowned"],
+			"SMALL MOUNTAIN" => ["Creeper", "Skeleton", "Spider", "Wolf", "Zombie", "Witch"],
 			"SWAMP" => ["Spider", "Stray", "Witch", "Zombie", "Slime"],
 			"TAIGA" => ["Spider", "Stray", "Zombie", "Enderman", "Skeleton", "Creeper"],
 		];
